@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Layout — Система инвентаризации</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="logo-qr">QR</span><span class="logo-text"> Layout</span>
+      </a>
+      <nav class="navbar__links" id="navLinks">
+        <a href="#features">Возможности</a>
+        <a href="#demo">Демо</a>
+        <a href="#stack">Технологии</a>
+        <a href="#footer">Контакт</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content fade-in">
+        <span class="hero__badge">Дипломный проект</span>
+        <h1 class="hero__title">Инвентаризация<br /><span class="accent">нового поколения</span></h1>
+        <p class="hero__sub">
+          Мобильное приложение для проведения инвентаризации с использованием QR-кодов. Работает полностью офлайн, фиксирует результаты по каждой комнате и формирует отчёты.
+        </p>
+        <div class="hero__cta-row">
+          <a href="#features" class="btn btn--primary">Узнать больше</a>
+          <a href="#demo" class="btn btn--ghost">Посмотреть демо</a>
+        </div>
+      </div>
+
+      <div class="hero__phone-wrap fade-in fade-in--delay">
+        <div class="phone">
+          <div class="phone__frame">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <!-- Mockup: Home Screen -->
+              <div class="mock-screen mock-home">
+                <div class="mock-topbar">
+                  <div class="mock-title">QR Layout</div>
+                  <div class="mock-icons">
+                    <div class="mock-icon-dot"></div>
+                    <div class="mock-icon-dot"></div>
+                  </div>
+                </div>
+                <div class="mock-search">
+                  <div class="mock-search-icon">⌕</div>
+                  <div class="mock-search-text">Поиск предметов...</div>
+                </div>
+                <div class="mock-stats-row">
+                  <div class="mock-stat">
+                    <div class="mock-stat-num">248</div>
+                    <div class="mock-stat-label">Предметов</div>
+                  </div>
+                  <div class="mock-stat">
+                    <div class="mock-stat-num">12</div>
+                    <div class="mock-stat-label">Комнат</div>
+                  </div>
+                  <div class="mock-stat">
+                    <div class="mock-stat-num">5</div>
+                    <div class="mock-stat-label">Проверок</div>
+                  </div>
+                </div>
+                <div class="mock-list">
+                  <div class="mock-item">
+                    <div class="mock-item-icon" style="background:#A80000"></div>
+                    <div class="mock-item-info">
+                      <div class="mock-item-name">Ноутбук Dell XPS</div>
+                      <div class="mock-item-sub">Кабинет 301 · №0042</div>
+                    </div>
+                    <div class="mock-item-qr">▦</div>
+                  </div>
+                  <div class="mock-item">
+                    <div class="mock-item-icon" style="background:#555"></div>
+                    <div class="mock-item-info">
+                      <div class="mock-item-name">Принтер HP LaserJet</div>
+                      <div class="mock-item-sub">Кабинет 204 · №0021</div>
+                    </div>
+                    <div class="mock-item-qr">▦</div>
+                  </div>
+                  <div class="mock-item">
+                    <div class="mock-item-icon" style="background:#888"></div>
+                    <div class="mock-item-info">
+                      <div class="mock-item-name">Стол письменный</div>
+                      <div class="mock-item-sub">Кабинет 105 · №0007</div>
+                    </div>
+                    <div class="mock-item-qr">▦</div>
+                  </div>
+                  <div class="mock-item">
+                    <div class="mock-item-icon" style="background:#aaa"></div>
+                    <div class="mock-item-info">
+                      <div class="mock-item-name">Проектор Epson</div>
+                      <div class="mock-item-sub">Кабинет 301 · №0018</div>
+                    </div>
+                    <div class="mock-item-qr">▦</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__bg-blob"></div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Возможности</span>
+        <h2 class="section-title">Всё необходимое<br />для инвентаризации</h2>
+        <p class="section-sub">Приложение охватывает полный цикл: от создания карточки предмета до формирования итогового отчёта.</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="3" height="3"/>
+              <rect x="18" y="14" width="3" height="3"/><rect x="14" y="18" width="3" height="3"/>
+              <rect x="18" y="18" width="3" height="3"/>
+            </svg>
+          </div>
+          <h3>QR-коды</h3>
+          <p>Генерация уникального QR-кода для каждого предмета. Сохранение в галерею или мгновенный скан камерой.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/>
+              <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+              <line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/>
+            </svg>
+          </div>
+          <h3>Инвентаризация</h3>
+          <p>Создание сессий по выбранным комнатам. Статус каждого предмета: найден, отсутствует или не в той комнате.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="9" y1="21" x2="9" y2="9"/><circle cx="15" cy="15" r="3"/>
+            </svg>
+          </div>
+          <h3>Отчёты</h3>
+          <p>Календарный обзор всех сессий. Детальный отчёт по каждой проверке с разбивкой по комнатам и статусам.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </div>
+          <h3>Поиск</h3>
+          <p>Мгновенный поиск по названию, инвентарному номеру или комнате. Фильтрация и сортировка списка.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="5" y="2" width="14" height="20" rx="2"/>
+              <line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/>
+              <line x1="9" y1="15" x2="12" y2="15"/>
+            </svg>
+          </div>
+          <h3>Офлайн</h3>
+          <p>Все данные хранятся локально на устройстве через Hive. Работает без подключения к интернету.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </div>
+          <h3>Экспорт данных</h3>
+          <p>Выгрузка справочников: этажи, комнаты, типы локаций. Готово к интеграции с учётными системами.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO / MOCKUPS -->
+  <section class="demo section" id="demo">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Демо</span>
+        <h2 class="section-title">Интерфейс приложения</h2>
+        <p class="section-sub">Простой и понятный дизайн на основе Material Design 3 с корпоративной цветовой схемой.</p>
+      </div>
+
+      <div class="demo__phones">
+
+        <!-- Phone 1: Main Screen -->
+        <div class="demo__phone-item fade-in">
+          <div class="phone phone--sm">
+            <div class="phone__frame">
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <div class="mock-screen mock-home">
+                  <div class="mock-topbar">
+                    <div class="mock-title">Предметы</div>
+                    <div class="mock-icons">
+                      <div class="mock-icon-dot"></div>
+                    </div>
+                  </div>
+                  <div class="mock-search">
+                    <div class="mock-search-icon">⌕</div>
+                    <div class="mock-search-text">Поиск...</div>
+                  </div>
+                  <div class="mock-list">
+                    <div class="mock-item"><div class="mock-item-icon" style="background:#A80000"></div><div class="mock-item-info"><div class="mock-item-name">Ноутбук Dell</div><div class="mock-item-sub">Каб. 301</div></div><div class="mock-item-qr">▦</div></div>
+                    <div class="mock-item"><div class="mock-item-icon" style="background:#555"></div><div class="mock-item-info"><div class="mock-item-name">Принтер HP</div><div class="mock-item-sub">Каб. 204</div></div><div class="mock-item-qr">▦</div></div>
+                    <div class="mock-item"><div class="mock-item-icon" style="background:#888"></div><div class="mock-item-info"><div class="mock-item-name">Проектор</div><div class="mock-item-sub">Каб. 301</div></div><div class="mock-item-qr">▦</div></div>
+                    <div class="mock-item"><div class="mock-item-icon" style="background:#aaa"></div><div class="mock-item-info"><div class="mock-item-name">Стол</div><div class="mock-item-sub">Каб. 105</div></div><div class="mock-item-qr">▦</div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="demo__label">Список предметов</p>
+        </div>
+
+        <!-- Phone 2: QR Scanner -->
+        <div class="demo__phone-item demo__phone-item--center fade-in">
+          <div class="phone phone--lg">
+            <div class="phone__frame">
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <div class="mock-screen mock-scanner">
+                  <div class="mock-scanner-top">
+                    <div class="mock-back-btn">‹</div>
+                    <div class="mock-scanner-title">Сканирование</div>
+                    <div></div>
+                  </div>
+                  <div class="mock-scanner-viewfinder">
+                    <div class="mock-viewfinder-inner">
+                      <div class="mock-corner tl"></div>
+                      <div class="mock-corner tr"></div>
+                      <div class="mock-corner bl"></div>
+                      <div class="mock-corner br"></div>
+                      <div class="mock-scan-line"></div>
+                    </div>
+                  </div>
+                  <div class="mock-scanner-hint">Наведите камеру на QR-код предмета</div>
+                  <div class="mock-scanner-room">
+                    <div class="mock-room-tag">Кабинет 301</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="demo__label">QR-сканер</p>
+        </div>
+
+        <!-- Phone 3: Reports -->
+        <div class="demo__phone-item fade-in">
+          <div class="phone phone--sm">
+            <div class="phone__frame">
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <div class="mock-screen mock-reports">
+                  <div class="mock-topbar">
+                    <div class="mock-title">Отчёты</div>
+                  </div>
+                  <div class="mock-calendar">
+                    <div class="mock-cal-header">
+                      <span>‹</span><span>Апрель 2025</span><span>›</span>
+                    </div>
+                    <div class="mock-cal-days">
+                      <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                    </div>
+                    <div class="mock-cal-grid">
+                      <span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+                      <span>7</span><span>8</span><span>9</span><span>10</span><span class="cal-dot">11</span><span>12</span><span>13</span>
+                      <span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span class="cal-dot">19</span><span>20</span>
+                      <span class="cal-today">21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span>
+                    </div>
+                  </div>
+                  <div class="mock-report-summary">
+                    <div class="mock-rep-row"><span class="mock-rep-label">Найдено</span><span class="mock-rep-val found">96%</span></div>
+                    <div class="mock-rep-row"><span class="mock-rep-label">Отсутствует</span><span class="mock-rep-val missing">4%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="demo__label">Отчёты</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="stack section" id="stack">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Технологии</span>
+        <h2 class="section-title">Стек разработки</h2>
+        <p class="section-sub">Современные инструменты для создания надёжного кроссплатформенного мобильного приложения.</p>
+      </div>
+      <div class="stack__grid">
+        <div class="stack-card fade-in">
+          <div class="stack-card__badge" style="background:#54C5F8; color:#fff">Fl</div>
+          <div class="stack-card__info">
+            <div class="stack-card__name">Flutter</div>
+            <div class="stack-card__desc">Кроссплатформенный UI-фреймворк от Google. iOS, Android, Web, Desktop.</div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-card__badge" style="background:#00B4AB; color:#fff">Dart</div>
+          <div class="stack-card__info">
+            <div class="stack-card__name">Dart</div>
+            <div class="stack-card__desc">Строго типизированный язык программирования. Null-safety, async/await.</div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-card__badge" style="background:#FF9800; color:#fff">Hive</div>
+          <div class="stack-card__info">
+            <div class="stack-card__name">Hive DB</div>
+            <div class="stack-card__desc">Быстрая локальная NoSQL-база данных. Офлайн-хранилище всех данных.</div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-card__badge" style="background:#A80000; color:#fff">QR</div>
+          <div class="stack-card__info">
+            <div class="stack-card__name">mobile_scanner</div>
+            <div class="stack-card__desc">Высокопроизводительный QR/Barcode-сканер через нативную камеру.</div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-card__badge" style="background:#333; color:#fff">QR</div>
+          <div class="stack-card__info">
+            <div class="stack-card__name">qr_flutter</div>
+            <div class="stack-card__desc">Генерация QR-кодов в виде виджетов Flutter. Экспорт в PNG.</div>
+          </div>
+        </div>
+        <div class="stack-card fade-in">
+          <div class="stack-card__badge" style="background:#6750A4; color:#fff">M3</div>
+          <div class="stack-card__info">
+            <div class="stack-card__name">Material Design 3</div>
+            <div class="stack-card__desc">Система дизайна Google. Адаптивные компоненты, динамические цвета.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <span class="logo-qr">QR</span><span class="logo-text"> Layout</span>
+      </div>
+      <p class="footer__desc">Система инвентаризации на основе QR-кодов.<br />Дипломный проект, 2025.</p>
+      <p class="footer__copy">© 2025 QR Layout. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
